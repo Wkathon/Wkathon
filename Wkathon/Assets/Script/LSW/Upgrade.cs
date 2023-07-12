@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StoreUpgrade : MonoBehaviour
+public class Upgrade : MonoBehaviour
 {
     [SerializeField]
     private Int32 cost = 50; // 건물 업그레이드 비용
@@ -14,7 +14,7 @@ public class StoreUpgrade : MonoBehaviour
         props = FindObjectOfType<PlayerProps>(); // PlayerProps 찾기
     }
 
-    public void Upgrade()
+    public void UpgradeMethod()
     {
         if (props.money >= cost)
         {
