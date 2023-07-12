@@ -33,6 +33,10 @@ public class Fix : MonoBehaviour
             HP -= dmg;
             currentTime = 0;
         }
+        if (HP <= 0)
+        {
+
+        }
     }
 
     public void fix()
