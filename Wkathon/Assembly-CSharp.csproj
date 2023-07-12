@@ -56,21 +56,21 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Treemeew\FadeInOut.cs" />
+    <Compile Include="Assets\Script\Treemeew\BtnManager.cs" />
+    <Compile Include="Assets\Script\Treemeew\Loading.cs" />
+    <Compile Include="Assets\Script\Treemeew\Money.cs" />
+    <Compile Include="Assets\Script\Treemeew\Fix.cs" />
     <Compile Include="Assets\Script\LSW\PlayerProps.cs" />
     <Compile Include="Assets\Script\LSW\UpgradeUser.cs" />
     <Compile Include="Assets\Script\LSW\UnlockFood.cs" />
-    <Compile Include="Assets\Script\Treemeew\Fix.cs" />
-    <Compile Include="Assets\Script\Treemeew\Loading.cs" />
-    <Compile Include="Assets\Script\Treemeew\FadeInOut.cs" />
-    <Compile Include="Assets\Script\Treemeew\Money.cs" />
-    <Compile Include="Assets\Script\Treemeew\BtnManager.cs" />
-    <Compile Include="Assets\Script\LSW\UnlockFloor.cs" />
-    <Compile Include="Assets\Script\LSW\Departments.cs" />
+    <Compile Include="Assets\Script\Treemeew\UpDown.cs" />
     <Compile Include="Assets\Gsw\SoundManager.cs" />
     <Compile Include="Assets\Gsw\DontDestroy.cs" />
     <Compile Include="Assets\Gsw\EndingTypingEffect1.cs" />
+    <Compile Include="Assets\Script\LSW\Departments.cs" />
     <Compile Include="Assets\Gsw\FailTypingEffect.cs" />
-    <Compile Include="Assets\Script\Treemeew\UpDown.cs" />
+    <Compile Include="Assets\Script\LSW\UnlockFloor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
