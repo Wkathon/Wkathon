@@ -8,24 +8,26 @@ using UnityEngine.UI;
 public class UnlockFloor : MonoBehaviour
 {
     public Int32 cost = 5000;
-    [NotNull]
+    [DisallowNull]
     public Int32 floor;
     public Money money;
     public Image panel;
-    public GameObject[] lockObjects;
+    public GameObject lockObjects;
 
     private void Start()
     {
         money = FindObjectOfType<Money>();
         panel = transform.Find("Panel").GetComponent<Image>();
+        lockObjects = transform.Find("Lock Objects").gameObject;
     }
     public void Unlock()
     {
         if (cost <= money.money)
         {
             money.money -= cost;
-            foreach (var go in lockObjects) { go.SetActive(false); }
-            panel.color = new Color(255, 255, 255, 100);
+            lockObjects.SetActive(false);
+            panel.color = new Color32(255, 255, 255, 100);
+            print("언락 성공");
         } else
         {
             print("언락 실패");

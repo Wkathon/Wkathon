@@ -254,8 +254,7 @@ MonoBehaviour:
   floor: 0
   money: {fileID: 0}
   panel: {fileID: 0}
-  lockObjects:
-  - {fileID: 910929185}
+  lockObjects: {fileID: 0}
 --- !u!1 &153856263
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +840,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 580840759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1843652804}
+        m_TargetAssemblyTypeName: UnlockFloor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &580840759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1939,7 +1950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Payday: 0
-  money: 1000
+  money: 5000
   ShowMoney: {fileID: 536877036}
   pay: 100
 --- !u!1 &1418861563
@@ -2681,7 +2692,7 @@ MonoBehaviour:
   floor: 0
   money: {fileID: 1270920121}
   panel: {fileID: 0}
-  lockObjects: []
+  lockObjects: {fileID: 0}
 --- !u!1 &1848556900
 GameObject:
   m_ObjectHideFlags: 0
