@@ -8,6 +8,7 @@ public class UnlockFood : MonoBehaviour
 {
     public Dictionary<string, Tuple<Int32, bool>> foodDict; // {음식 이름, (언락 가격, 언락 여부)}
     PlayerProps props;
+    Money money;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class UnlockFood : MonoBehaviour
             { "lobster",         Tuple.Create(1000, false) }
         };
         props = FindObjectOfType<PlayerProps>();
+        money = FindObjectOfType<Money>();
     }
 
     public void Unlock(string foodName)
@@ -29,10 +31,9 @@ public class UnlockFood : MonoBehaviour
         if (foodDict[foodName].Item2)
         {
             print("이미 언락된 음식");
-        }
-        else if (foodCost <= props.money)
+        } else if (foodCost <= money.money)
         {
-            props.money -= foodCost;
+            money.money -= foodCost;
             foodDict.Remove(foodName);
             foodDict.Add(foodName, Tuple.Create(foodCost, true));
             print(foodName + " 언락 성공");
