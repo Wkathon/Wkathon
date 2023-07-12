@@ -22,10 +22,7 @@ public class Money : MonoBehaviour
             payday = 0;
         }
 
-        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
-        {
-            money += pay / 55;
-        }
+        
 
         showMoney.text = money.ToString();
     }

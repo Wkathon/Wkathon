@@ -23,6 +23,7 @@ public class UnlockFloor : MonoBehaviour
     }
     public void Unlock()
     {
+        print("AA");
         if (cost <= money.money)
         {
             money.money -= cost;
