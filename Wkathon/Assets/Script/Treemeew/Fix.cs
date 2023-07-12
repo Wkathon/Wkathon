@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Fix : MonoBehaviour
 {
+    public int FixRrice;
+
+
     // Start is called before the first frame update
     void Start()
     {

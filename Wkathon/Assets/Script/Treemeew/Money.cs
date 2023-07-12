@@ -9,6 +9,7 @@ public class Money : MonoBehaviour
     public float Payday;
     public int money;
     public TextMeshProUGUI ShowMoney;
+    public int pay = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +24,12 @@ public class Money : MonoBehaviour
 
         if (Payday >= 2)
         {
-            money += 100;
+            money += pay;
             Payday = 0;
         }
         if (Input.GetMouseButtonDown(0))
         {
-            money += 1;
+            money += pay/55;
 
         }
 
