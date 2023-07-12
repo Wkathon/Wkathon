@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class UnlockFloor : MonoBehaviour
 {
     public Int32 cost = 5000;
-    [DisallowNull]
     public Int32 floor;
     public Money money;
     public Image panel;
