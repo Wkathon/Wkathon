@@ -5,16 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Treemeew/StartScene.unity
-    guid: 589e666dd00db01418189b3db6880371
+    path: Assets/Gsw/Ingame.unity
+    guid: c66d803805662ec4b8c0117d5e98dc3e
   - enabled: 1
-    path: Assets/Scenes/Treemeew/LoadingScene.unity
-    guid: a0fe15fb7b9fb1a41a9aebb3e1b8b040
+    path: Assets/Gsw/Loading.unity
+    guid: 47d97712a3915454784871e64801dfa7
   - enabled: 1
-    path: Assets/Scenes/Ingame.unity
-    guid: 96ed414bb16aa1348bb79dd659e4584f
+    path: Assets/Gsw/Ending.unity
+    guid: df9925ad813a6c5439647cea9d3d013b
+  - enabled: 1
+    path: Assets/Gsw/Start.unity
+    guid: f63a9c591a0ef7d41931234092e38271
   m_configObjects: {}
