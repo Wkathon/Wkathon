@@ -3,36 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class Money : MonoBehaviour
 {
-    public float Payday;
+    public float payday;
     public int money;
-    public TextMeshProUGUI ShowMoney;
+    public TextMeshProUGUI showMoney;
     public int pay = 100;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        Payday+=Time.deltaTime;
+        payday += Time.deltaTime;
 
-        if (Payday >= 2)
+        if (payday >= 2)
         {
             money += pay;
-            Payday = 0;
+            payday = 0;
         }
-        if (Input.GetMouseButtonDown(0))
+
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-            money += pay/55;
-
+            money += pay / 55;
         }
 
-        ShowMoney.text = money.ToString();
+        showMoney.text = money.ToString();
     }
 }
