@@ -19,10 +19,10 @@ public class Departments : MonoBehaviour
 
     public void Upgrade()
     {
-        // 매장이 아닌 초록색 업글 버튼을 눌러야 메서드가 실행됨
         if (cost <= money.money)
         {
             money.money -= cost;
+            cost += 100;
             level += 1;
             //payBonus += 50;
             money.pay += 50;
