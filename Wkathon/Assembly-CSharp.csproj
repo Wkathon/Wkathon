@@ -59,6 +59,11 @@
     <Compile Include="Assets\Script\LSW\PlayerProps.cs" />
     <Compile Include="Assets\Script\LSW\Upgrade.cs" />
     <Compile Include="Assets\Script\LSW\UnlockFood.cs" />
+    <Compile Include="Assets\Script\Treemeew\Fix.cs" />
+    <Compile Include="Assets\Script\Treemeew\Loading.cs" />
+    <Compile Include="Assets\Script\Treemeew\FadeInOut.cs" />
+    <Compile Include="Assets\Script\Treemeew\Money.cs" />
+    <Compile Include="Assets\Script\Treemeew\BtnManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

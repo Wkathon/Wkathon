@@ -665,6 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 1000
   storeLvl: 1
+  storeHp: 100
 --- !u!114 &1270920119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,8 +912,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1270920119}
-        m_TargetAssemblyTypeName: StoreUpgrade, Assembly-CSharp
-        m_MethodName: Upgrade
+        m_TargetAssemblyTypeName: Upgrade, Assembly-CSharp
+        m_MethodName: UpgradeMethod
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
