@@ -17,8 +17,10 @@ public class UnlockFloor : MonoBehaviour
     private void Start()
     {
         money = FindObjectOfType<Money>();
-        panel = transform.Find("Panel").GetComponent<Image>();
-        lockObjects = transform.Find("Lock Objects").gameObject;
+        if (lockObjects == null)
+            lockObjects = transform.Find("Lock Objects").gameObject;
+        if (panel == null)
+            panel = transform.Find("Panel").GetComponent<Image>();
     }
     public void Unlock()
     {
