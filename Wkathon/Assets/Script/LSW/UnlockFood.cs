@@ -21,6 +21,7 @@ public class UnlockFood : MonoBehaviour
             { "lobster",         Tuple.Create(1000, false) }
         };
         props = FindObjectOfType<PlayerProps>();
+        money = FindObjectOfType<Money>();
     }
 
     public void Unlock(string foodName)
