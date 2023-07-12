@@ -19,7 +19,7 @@ public class Fix : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Money = FindObjectOfType<Money>();
     }
 
     // Update is called once per frame
