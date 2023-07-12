@@ -8,8 +8,8 @@ public class Departments : MonoBehaviour
     // 백화점 매장
     //public Int32 payBonus = 0;
     public Int32 level = 0;
-    public Int32 cost = 500; // 매장 업그레이드 비용
-    public string deptName = "restroom";
+    public Int32 cost; // 매장 업그레이드 비용
+    public string deptName;
     Money money;
 
     private void Start()
