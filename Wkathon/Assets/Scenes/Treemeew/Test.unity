@@ -208,7 +208,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 3
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -523,10 +523,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 267707e51a105ff42810176a30832029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FixRrice: 0
+  FixPrice: 0
   HP: 100
   Heal_HP: 45
   Show_HP: {fileID: 138362771}
+  currentTime: 0
 --- !u!1 &1037099442
 GameObject:
   m_ObjectHideFlags: 0
