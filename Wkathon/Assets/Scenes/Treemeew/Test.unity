@@ -290,6 +290,7 @@ MonoBehaviour:
   Payday: 0
   money: 0
   ShowMoney: {fileID: 479215438}
+  pay: 100
 --- !u!4 &999896931
 Transform:
   m_ObjectHideFlags: 0
