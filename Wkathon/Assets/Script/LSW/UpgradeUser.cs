@@ -7,7 +7,7 @@ public class UpgradeUser : MonoBehaviour
 {
     [SerializeField]
     private Int32 cost = 50; // 건물 업그레이드 비용
-    public PlayerProps props;
+    public PlayerProps props;  
     public Money money;
 
     private void Start()
